@@ -10,7 +10,6 @@ if (isset($_SESSION['auth'])) {
     exit;
 }
 
-// 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $u = trim($_POST['uname'] ?? '');   
     $p = $_POST['password'] ?? '';      
@@ -26,7 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // if the information they gave doesnt work, show them 
     $err = 'Invalid credentials.';
 }
-
 
 $msg = $_GET['msg'] ?? '';
 ?>
